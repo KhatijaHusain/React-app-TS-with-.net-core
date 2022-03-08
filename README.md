@@ -4,10 +4,12 @@
 - Food Blog SPA React app with Typescript
 <hr/>
 
-# React-app-TS-with-.net-core
 ## DEMO 
 ![alt text](https://github.com/KhatijaHusain/React-app-TS-with-.net-core/blob/master/React-App/public/BlogDemo.gif)
 
+<hr/>
+
+# React-app-TS-with-.net-core
 ## Description
 This is a single page react application developed with typescript.
 
@@ -24,15 +26,16 @@ the app will start running on below URL
 
 
 # .netCore 5 Web App
-## DEMO 
 
-![alt text](https://github.com/KhatijaHusain/React-app-TS-with-.net-core/blob/master/React-App/public/BlogDemo.gif)
+## Description
+.Netcore 5 Web api with EF core 5
 
 ## Features
 1. Repository Pattern
 2. RestFull Services
 3. Swagger enabled (Rest Service specific action)
 4. Dependency Injection
+5. Postgres Database
 
 
 ## API
