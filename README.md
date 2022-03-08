@@ -1,9 +1,10 @@
-# React-app-TS-with-.net-core
 ## Projects
 - React
 
 - Food Blog SPA React app with Typescript
+<hr/>
 
+# React-app-TS-with-.net-core
 ## DEMO 
 ![alt text](https://github.com/KhatijaHusain/React-app-TS-with-.net-core/blob/master/React-App/public/BlogDemo.gif)
 
