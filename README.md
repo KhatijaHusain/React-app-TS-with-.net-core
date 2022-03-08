@@ -1,8 +1,8 @@
 # React-app-TS-with-.net-core
+## Projects
+- React
 
-# React
-
-# Food Blog SPA React app with Typescript
+- Food Blog SPA React app with Typescript
 
 ## DEMO 
 ![alt text](https://github.com/KhatijaHusain/React-app-TS-with-.net-core/blob/master/React-App/public/BlogDemo.gif)
@@ -22,9 +22,7 @@ the app will start running on below URL
  [http://localhost:3000] 
 
 
-# .netCore 5 
-
-# .netCore Web App
+# .netCore 5 Web App
 ## DEMO 
 
 ![alt text](https://github.com/KhatijaHusain/React-app-TS-with-.net-core/blob/master/React-App/public/BlogDemo.gif)
