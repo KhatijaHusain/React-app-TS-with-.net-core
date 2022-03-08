@@ -1,7 +1,7 @@
 # Food Blog SPA React app with Typescript
 
 ## DEMO 
-![alt text](https://github.com/LBRInt/Interview_KhatijaHusain/blob/React-app/React-App/public/BlogDemo.gif)
+![alt text](https://github.com/KhatijaHusain/React-app-TS-with-.net-core/blob/master/React-App/public/BlogDemo.gif)
 
 ## Description
 This is a single page react application developed with typescript.
