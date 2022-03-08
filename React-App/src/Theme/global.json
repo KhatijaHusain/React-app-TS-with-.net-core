@@ -1,0 +1,89 @@
+{
+    "status": {
+        "danger": "#ff9800"
+    },
+    "customShadows": {
+        "z20": "rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 20px 40px -4px"
+    },
+    "palette": {
+        "common":{
+            "black":"#000",
+            "white":"#fff"
+        },
+        "primary": {
+            "main": "#EF426F",
+            "light": "#FDE3EA",            
+            "dark": "#EF426F",
+            "contrastText": "#ffffff"
+        },
+        "secondary": {
+            "main": "#1B242B",
+            "light": "#F2F4F6",            
+            "dark": "#ABAEB2"
+        },
+        "success":{
+            "main": "#02C381",
+            "light": "#E0F6EE",            
+            "dark": "#02C381"
+        },
+        "error": {
+            "dark": "#EC4646",
+            "main": "#EC4646"
+        },
+        "text": {
+            "primary": "#1B242B",
+            "secondary": "#878B90",
+            "disabled": "#ABAEB2"
+        }
+    },
+    "shape":{
+        "borderRadius": 4
+    },
+    "grid":{
+        "minHeight": "900px",
+        "height": "100%"
+    },
+    "typography":{
+        "fontSize": 16,
+        "fontWeightLight": 300,
+        "fontWeightRegular": 400,
+        "fontWeightMedium": 500,
+        "fontWeightBold": 700,
+        "h1":{
+            "fontFamily": "Gilroy",
+            "fontStyle": "normal",
+            "lineHeight": "45px",
+            "fontWeight": 600,
+            "fontSize": 64
+        },
+        "h2":{
+            "fontFamily": "Gilroy",
+            "fontStyle": "normal",
+            "lineHeight": "45px",
+            "fontWeight": 500,
+            "fontSize": 62
+        },
+        "h3":{
+            "fontFamily": "Gilroy",
+            "fontStyle": "normal",
+            "lineHeight": "45px",
+            "fontWeight": 300,
+            "fontSize": "40px"
+        },
+        "subtitle1":{
+        },
+        "subtitle2":{
+
+        },
+        "body1":{
+            "fontFamily": "Gilroy",
+            "fontStyle": "normal",
+            "lineHeight": "45px",
+            "fontWeight": 300,
+            "fontSize": 20
+        },
+        "body2":{
+
+        }
+    }
+}
