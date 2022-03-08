@@ -1,7 +1,7 @@
 ## Projects
-- React
+- ReactApp with Typescript
 
-- Food Blog SPA React app with Typescript
+- .netCore 5 Web Api
 <hr/>
 
 ## DEMO 
