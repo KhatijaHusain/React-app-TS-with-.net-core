@@ -1,4 +1,4 @@
-import { Container, Grid, Box } from "@mui/material";
+import { Container, Grid, Box, Typography } from "@mui/material";
 import styles from './layout.module.css';
 
 export class LayoutProps {
@@ -10,19 +10,16 @@ export class LayoutProps {
 export default function Layout({ children, title }: LayoutProps) {
   return (
     <>
-      <header className={styles.header}>
-        <Box>{title}</Box>
-      </header>
-      <hr></hr>
       <Grid container>
-        <Grid item md={8} lg={6} xl={6} >
-          <Container className={styles.container}>
-            <main className={styles.main}>{children}</main>
-          </Container>
+        <Typography padding={5} variant="h2">{title}</Typography>
+      </Grid>
+      <Grid container sx={{ background: (theme)=>theme.palette.primary.dark}}>
+        <Grid item md={8} lg={6} xl={6} sx={{ padding: "10px"}}>
+          {children}
         </Grid>
-          <Grid item md={4} lg={6} xl={6}>
-            <Box sx={{padding: "20px"}}><img src="../blog.jpg" alt='food' width="487px" height="460.58px" /></Box>
-          </Grid>
+        <Grid item md={4} lg={6} xl={6}>
+          <Box sx={{ padding: "20px" }}><img src="../blog.jpg" alt='food' width="487px" height="460.58px" /></Box>
+        </Grid>
       </Grid>
       <footer className={styles.footer}>
         <a

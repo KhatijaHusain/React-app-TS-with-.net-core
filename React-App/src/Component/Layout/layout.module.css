@@ -4,19 +4,6 @@
   min-height: 100vh;
 }
 
-.header {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 20px;
-  font-family: Gilroy;
-  font-style: normal;
-  line-height: 45px;
-  font-weight: 600;
-  font-size: 4rem;
-  color:#EF426F;
-}
-
 .main {
   background: #FDE3EA;
   border-radius: 4px;

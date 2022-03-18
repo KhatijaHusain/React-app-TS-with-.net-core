@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import ListItem from '@mui/material/ListItem';
-import { List, Typography,Box ,IconButton, ListItemButton, ListItemText} from '@mui/material';
+import { List, Typography, Box, IconButton, ListItemButton, ListItemText, Button } from '@mui/material';
 import CommentIcon from '@mui/icons-material/Comment';
-import Link from '@material-ui/core/Link';
-import PropTypes from 'prop-types';
 import BlogContent from '../BlogContent';
-import BlogTheme from '../../Theme/theme';
 
 interface IProps {
 }
@@ -14,13 +11,13 @@ interface IState {
     items?: Blog[];
     dataisLoaded: boolean;
     contentDataisLoaded: boolean;
-    content:Blog;
+    content: Blog;
 }
 
 interface Blog {
     blogpostid: number;
     title: string;
-    body:string;
+    body: string;
     blogComment: BlogComment[]
 }
 
@@ -36,9 +33,9 @@ export class Home extends React.Component<IProps, IState> {
         console.log(props);
         this.state = {
             items: [],
-            dataisLoaded: false, 
-            contentDataisLoaded: false,           
-            content:{blogpostid:0,blogComment:[],title:"", body:""}
+            dataisLoaded: false,
+            contentDataisLoaded: false,
+            content: { blogpostid: 0, blogComment: [], title: "", body: "" }
         };
     }
 
@@ -55,8 +52,8 @@ export class Home extends React.Component<IProps, IState> {
             })
     }
 
-    test= (id:number) => {
-        console.log("tghjhbmjn"+id);
+    getBlog = (id: number) => {
+        console.log("tghjhbmjn" + id);
         fetch(
             `https://localhost:5001/v1/blogposts/${id}`)
 
@@ -80,19 +77,20 @@ export class Home extends React.Component<IProps, IState> {
                             <Box sx={{ fontSize: (theme) => theme.typography.fontSize }}>{item.blogComment.length}</Box> <CommentIcon />
                         </IconButton>
                     }>
-                     <Link  onClick={()=>this.test(item.blogpostid)}>
-                    <ListItemText  primary={`${item.blogpostid}.  ${item.title}`}/></Link>
+                    <Button onClick={() => this.getBlog(item.blogpostid)}>
+                        <ListItemText sx={{color:(theme) => theme.palette.common.white}} primary={`${item.blogpostid}.  ${item.title}`} />
+                    </Button>
                 </ListItem>
             </>
         );
         if (!dataisLoaded) return <div>
             <h1> Pleses wait some time.... </h1> </div>;
 
-        if(contentDataisLoaded) return <BlogContent body={this.state.content.body} blogComment={this.state.content.blogComment}
-        blogpostid={this.state.content.blogpostid} title={this.state.content.title}/>
+        if (contentDataisLoaded) return <BlogContent body={this.state.content.body} blogComment={this.state.content.blogComment}
+            blogpostid={this.state.content.blogpostid} title={this.state.content.title} />
         return (
             <>
-                <Typography sx={{ mt: 4, mb: 2, color: (theme) => theme.palette.secondary.main }} variant="h6" component="div">
+                <Typography sx={{ mt: 4, mb: 2, color: (theme) => theme.palette.common.white }} variant="h6" component="div">
                     <h1> Food Blog </h1>
                     <List>{blogs}</List>
                 </Typography>
