@@ -66,14 +66,30 @@
         "h3":{
             "fontFamily": "Gilroy",
             "fontStyle": "normal",
-            "lineHeight": "45px",
-            "fontWeight": 300,
-            "fontSize": "40px"
+            "lineHeight": "36px",
+            "fontWeight": 500,
+            "fontSize": "2rem"
+        },
+        "h4":{
+            "fontFamily": "Gilroy",
+            "fontStyle": "normal",
+            "lineHeight": "10px",
+            "fontSize": "1.5rem"
+        },
+        "h5":{
+            "fontFamily": "Gilroy",
+            "fontStyle": "normal",
+            "lineHeight": "10px",
+            "fontSize": "1rem"
         },
         "subtitle1":{
-        },
-        "subtitle2":{
-
+            "fontWeight": "normal",
+            "fontSize": "11px",
+            "lineHeight": "14px",          
+            "letterSpacing": "1.5px",
+            "textTransform": "uppercase",          
+            "color": "#1B242B",
+            "backgroundColor": "transparent"
         },
         "body1":{
             "fontFamily": "Gilroy",
@@ -81,9 +97,6 @@
             "lineHeight": "45px",
             "fontWeight": 300,
             "fontSize": 20
-        },
-        "body2":{
-
         }
     }
 }
