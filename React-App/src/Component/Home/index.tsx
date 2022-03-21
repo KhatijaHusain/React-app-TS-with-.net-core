@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ListItem from '@mui/material/ListItem';
-import { List, Typography, Box, IconButton, ListItemButton, ListItemText, Button } from '@mui/material';
+import { List, Typography, Box, IconButton, ListItemButton, ListItemText, Button, Link } from '@mui/material';
 import CommentIcon from '@mui/icons-material/Comment';
 import BlogContent from '../BlogContent';
+import UserStories from '../UserStories';
 
 interface IProps {
 }
@@ -53,7 +54,6 @@ export class Home extends React.Component<IProps, IState> {
     }
 
     getBlog = (id: number) => {
-        console.log("tghjhbmjn" + id);
         fetch(
             `https://localhost:5001/v1/blogposts/${id}`)
 
@@ -92,7 +92,7 @@ export class Home extends React.Component<IProps, IState> {
             <>
                 <Typography sx={{ mt: 4, mb: 2, color: (theme) => theme.palette.common.white }} variant="h6" component="div">
                     <h1> Food Blog </h1>
-                    <List>{blogs}</List>
+                    <List>{blogs}</List>                    
                 </Typography>
             </>
 

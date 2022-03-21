@@ -1,4 +1,4 @@
-import { Container, Grid, Box, Typography } from "@mui/material";
+import { Container, Grid, Box, Typography, Link } from "@mui/material";
 import styles from './layout.module.css';
 
 export class LayoutProps {
@@ -12,6 +12,7 @@ export default function Layout({ children, title }: LayoutProps) {
     <>
       <Grid container>
         <Typography padding={5} variant="h2">{title}</Typography>
+        <Typography padding={5} variant="h2"><Link  href="/UserStories">UserStories</Link></Typography>
       </Grid>
       <Grid container sx={{ background: (theme)=>theme.palette.primary.dark}}>
         <Grid item md={8} lg={6} xl={6} sx={{ padding: "10px"}}>
